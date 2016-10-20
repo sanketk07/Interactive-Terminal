@@ -1,0 +1,52 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{
+    background: #222;
+    color: #78cc44;
+    font-size: 14px;
+    padding: 10px;
+    font-family: calibri;
+}
+.commented_Line{
+    padding: 10px;
+    color: #999;
+    font-family: monospace;
+    font-size: 13px;
+}
+em.highlight{
+    background: #222;
+    color: #eee;
+}
+em.link{
+    cursor: pointer;
+    color: #2675f4;
+}
+em.link:hover{
+    color: #26acf4;
+}
+.ip_Label,.op_Label{
+    text-align: right;
+    padding: 0 10px;
+    word-break: break-all;
+}
+.op_Label,.op_Line{
+    color: #9da3f0;
+}
+.caret{
+    background: #78cc44;
+    padding: 0 1px;
+    opacity: 0;
+}
+@keyframes blink {
+    40% {opacity: 0}
+    50% {opacity: 1}
+    85% {opacity: 1}
+    90% {opacity: 0}
+}
+@-webkit-keyframes blink {
+    50% {opacity: 1}
+    100% {opacity: 0}
+}
+.caret.blink{
+    -webkit-animation: blink 800ms infinite;
+    animation: blink 800ms infinite;
+}
